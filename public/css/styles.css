@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
 html {
   background-color: dimgray;
 }
 
-canvas {
-  background-color: aliceblue;
+h1 {
+  margin-bottom: 0;
+  font-family: 'Russo One';
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Russo One';
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
 }

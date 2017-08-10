@@ -23,10 +23,10 @@ This will hopefully be a live web application so the eventual URL will go here, 
 # Tech I'm using:
 
 * Node.js
-* HTML5 Canvas
 * Jasmine
 * Javascript
+* HTML and CSS
 
 # My approach:
 
-I'm hoping to make this very interactive by making a graphical user interface in HMTL5 Canvas, which seems like a very good platform for web apps and games like this.
+I was originally hoping to make this very interactive by making a graphical user interface in HMTL5 Canvas, which seems like a good platform for web apps and games, but my experience has shown that it's difficult to test. Although it wouldn't be impossible, I wasn't satisfied that I would be able to have a canvas app properly tested within the time constraints of this test.
