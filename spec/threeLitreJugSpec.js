@@ -5,7 +5,11 @@ describe('threeLitreJug', function(){
     jug = new threeLitreJug();
   });
 
-  it('has a capacity of 3', function(){
-    expect(jug.capacity).toEqual(3);
+  it('has a maximum capacity of 3', function(){
+    expect(jug.max_capacity).toEqual(3);
+  });
+
+  it('is empty at instantiation', function(){
+    expect(jug.current_capacity).toEqual(0);
   });
 })

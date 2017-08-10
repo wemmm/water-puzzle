@@ -1,3 +1,4 @@
 function fiveLitreJug() {
-  this.capacity = 5
+  this.max_capacity = 5
+  this.current_capacity = 0
 }
