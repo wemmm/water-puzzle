@@ -1,5 +1,3 @@
-'use strict';
-
 describe('fiveLitreJug', function(){
   var jug;
 
