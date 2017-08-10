@@ -12,4 +12,9 @@ describe('fiveLitreJug', function(){
   it('is empty at instantiation', function(){
     expect(jug.current_capacity).toEqual(0);
   });
+
+  it('can be filled', function(){
+    jug.fillFromTap()
+    expect(jug.current_capacity).toEqual(5);
+  });
 })
