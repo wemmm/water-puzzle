@@ -3,3 +3,7 @@ function waterPuzzle() {
   this.threeLitreJug = new threeLitreJug;
   this.scales = new scales;
 }
+
+waterPuzzle.prototype.fillFromTap = function (jug) {
+  jug.current_capacity = jug.max_capacity
+};

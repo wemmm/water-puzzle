@@ -3,6 +3,8 @@ describe('waterPuzzle', function(){
 
   beforeEach(function(){
     puzzle = new waterPuzzle();
+    jug1 = new fiveLitreJug();
+    jug2 = new threeLitreJug();
   });
 
   it('has an empty five litre jug', function(){
@@ -14,4 +16,11 @@ describe('waterPuzzle', function(){
     expect(puzzle.threeLitreJug).toBeDefined
     expect(puzzle.threeLitreJug.current_capacity).toEqual(0)
   });
+
+  it('can fill either jug to its maximum capacity', function() {
+    puzzle.fillFromTap(jug1);
+    puzzle.fillFromTap(jug2);
+    expect(jug1.current_capacity).toEqual(5)
+    expect(jug2.current_capacity).toEqual(3)
+  })
 })
