@@ -48,4 +48,30 @@ h2 {
 .buttons {
   padding-top: 50px;
   text-align: center;
+  margin-left: 70px;
+}
+
+.fillthree {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.emptythree {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.pourintofive {
+  margin-left: 120px;
+  margin-right: 0px;
+}
+
+.hidden1 {
+  visibility: hidden;
+  padding-right: 60px;
+}
+
+.hidden2 {
+  visibility: hidden;
+  padding-right: 82px;
 }
