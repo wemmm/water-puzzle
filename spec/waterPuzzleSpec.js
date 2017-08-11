@@ -23,4 +23,11 @@ describe('waterPuzzle', function(){
     expect(jug1.current_capacity).toEqual(5)
     expect(jug2.current_capacity).toEqual(3)
   })
+
+  it('can empty either jug', function() {
+    puzzle.empty(jug1);
+    puzzle.empty(jug2);
+    expect(jug1.current_capacity).toEqual(0)
+    expect(jug2.current_capacity).toEqual(0)
+  })
 })

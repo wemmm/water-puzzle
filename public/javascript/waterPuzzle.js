@@ -7,3 +7,7 @@ function waterPuzzle() {
 waterPuzzle.prototype.fillFromTap = function (jug) {
   jug.current_capacity = jug.max_capacity
 };
+
+waterPuzzle.prototype.empty = function (jug) {
+  jug.current_capacity = 0
+};
