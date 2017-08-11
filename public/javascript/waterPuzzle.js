@@ -8,20 +8,8 @@ waterPuzzle.prototype.fillJug = function (jug) {
   jug.current_capacity = jug.max_capacity
 };
 
-waterPuzzle.prototype.fillFiveLitreJug = function () {
-  this.fiveLitreJug.current_capacity = this.fiveLitreJug.max_capacity
-};
-
-waterPuzzle.prototype.fillThreeLitreJug = function () {
-  this.threeLitreJug.current_capacity = this.threeLitreJug.max_capacity
-};
-
-waterPuzzle.prototype.emptyFiveLitreJug = function () {
-  this.fiveLitreJug.current_capacity = 0
-};
-
-waterPuzzle.prototype.emptyThreeLitreJug = function () {
-  this.threeLitreJug.current_capacity = 0
+waterPuzzle.prototype.emptyJug = function (jug) {
+  jug.current_capacity = 0
 };
 
 waterPuzzle.prototype.pourInto = function (fromJug, toJug) {

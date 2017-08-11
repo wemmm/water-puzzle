@@ -16,36 +16,36 @@ describe('waterPuzzle', function(){
   });
 
   it('can fill either jug to its maximum capacity', function() {
-    puzzle.fillFiveLitreJug()
-    puzzle.fillThreeLitreJug()
+    puzzle.fillJug(puzzle.threeLitreJug)
+    puzzle.fillJug(puzzle.fiveLitreJug)
     expect(puzzle.fiveLitreJug.current_capacity).toEqual(5)
     expect(puzzle.threeLitreJug.current_capacity).toEqual(3)
   })
 
   it('can empty either jug', function() {
-    puzzle.emptyFiveLitreJug()
-    puzzle.emptyThreeLitreJug()
+    puzzle.emptyJug(puzzle.threeLitreJug)
+    puzzle.emptyJug(puzzle.fiveLitreJug)
     expect(puzzle.threeLitreJug.current_capacity).toEqual(0)
     expect(puzzle.fiveLitreJug.current_capacity).toEqual(0)
   })
 
   it('pour the contents of one jug into the other', function() {
-    puzzle.fillThreeLitreJug()
+    puzzle.fillJug(puzzle.threeLitreJug)
     puzzle.pourInto(puzzle.threeLitreJug, puzzle.fiveLitreJug)
     expect(puzzle.threeLitreJug.current_capacity).toEqual(0)
     expect(puzzle.fiveLitreJug.current_capacity).toEqual(3)
   })
 
   it('cannot add more water than a jug can hold', function() {
-    puzzle.fillFiveLitreJug()
-    puzzle.fillThreeLitreJug()
+    puzzle.fillJug(puzzle.threeLitreJug)
+    puzzle.fillJug(puzzle.fiveLitreJug)
     puzzle.pourInto(puzzle.fiveLitreJug, puzzle.threeLitreJug)
     expect(puzzle.fiveLitreJug.current_capacity).toEqual(5)
     expect(puzzle.threeLitreJug.current_capacity).toEqual(3)
   })
 
   it('cannot result in negative quanitities of water', function() {
-    puzzle.fillThreeLitreJug()
+    puzzle.fillJug(puzzle.threeLitreJug)
     puzzle.pourInto(puzzle.threeLitreJug, puzzle.fiveLitreJug)
     expect(puzzle.fiveLitreJug.current_capacity).toEqual(3)
     expect(puzzle.threeLitreJug.current_capacity).toEqual(0)
