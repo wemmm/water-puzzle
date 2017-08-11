@@ -22,3 +22,30 @@ h2 {
   text-align: center;
   text-shadow: 2px 2px 2px black;
 }
+
+.images {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.scales {
+  height: 200px;
+  width: 200px;
+  padding-right: 60px;
+}
+
+.smallbottle {
+  height: 200px;
+  width: 200px;
+}
+
+.largebottle {
+  height: 200px;
+  width: 200px;
+  padding-left: 60px;
+}
+
+.buttons {
+  padding-top: 50px;
+  text-align: center;
+}
