@@ -10,6 +10,9 @@ app.get('/', function (req, res) {
   res.render('index.pug');
 })
 
-app.listen(3000, function () {
-  console.log('Lovely server listening on port 3000!')
-})
+const server = app.listen(3000, function() {
+  const port = server.address().port;
+    console.log("Wonderful server is listening on port " + port);
+});
+
+module.exports = server;

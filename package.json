@@ -4,7 +4,7 @@
   "description": "```",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/wemmm/water-puzzle#readme",
   "dependencies": {
+    "chai": "^4.1.1",
     "express": "^4.15.4",
-    "jasmine": "^2.7.0",
-    "pug": "^2.0.0-rc.3"
+    "mocha": "^3.5.0",
+    "pug": "^2.0.0-rc.3",
+    "zombie": "^5.0.7"
   }
 }
