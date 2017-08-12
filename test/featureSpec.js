@@ -63,17 +63,27 @@ describe('Feature tests', function() {
     }).then(done, done);
   });
 
-  it('has a pour into bottle button that can be clicked on', function(done) {
+  it('has a pour into bottle button that pours the five litre contents into the three litre bottle', function(done) {
     var browser = this.browser;
-    browser.pressButton('Pour Into Five Litre Bottle').then(function() {
+    browser.pressButton('Fill Five Litre Bottle').then(function() {
     assert.ok(browser.success);
+    })
+    browser.pressButton('Pour Into Three Litre Bottle').then(function() {
+    assert.ok(browser.success);
+    browser.assert.text('h3', '3');
+    browser.assert.text('h4', '2');
     }).then(done, done);
   });
 
   it('has another pour into bottle button that can be clicked on', function(done) {
     var browser = this.browser;
-    browser.pressButton('Pour Into Three Litre Bottle').then(function() {
+    browser.pressButton('Fill Three Litre Bottle').then(function() {
     assert.ok(browser.success);
+    })
+    browser.pressButton('Pour Into Five Litre Bottle').then(function() {
+    assert.ok(browser.success);
+    browser.assert.text('h3', '0');
+    browser.assert.text('h4', '5');
     }).then(done, done);
   });
 });

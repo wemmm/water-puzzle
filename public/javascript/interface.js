@@ -24,4 +24,16 @@ $(document).ready(function() {
     puzzle.emptyJug(puzzle.fiveLitreJug)
     $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
   })
+
+  $('#pourintothree').on('click', function() {
+    puzzle.pourInto(puzzle.fiveLitreJug, puzzle.threeLitreJug)
+    $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
+    $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
+  })
+
+  $('#pourintofive').on('click', function() {
+    puzzle.pourInto(puzzle.threeLitreJug, puzzle.fiveLitreJug)
+    $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
+    $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
+  })
 })

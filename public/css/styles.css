@@ -27,11 +27,25 @@ h3 {
   display: inline;
   padding-left: 50px;
   padding-right: 50px;
+  font-size: 20px;
+}
+
+h4 {
+  display: inline;
+  padding-left: 200px;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.status {
+  text-align: center;
+  padding-top: 130px;
+  padding-left: 250px;
 }
 
 .images {
+  padding-top: 30px;
   text-align: center;
-  padding-top: 100px;
 }
 
 .scales {
@@ -68,6 +82,11 @@ h3 {
 }
 
 .pourintofive {
+  margin-left: 120px;
+  margin-right: 0px;
+}
+
+.pourintothree {
   margin-left: 120px;
   margin-right: 0px;
 }
