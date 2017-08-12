@@ -14,4 +14,14 @@ $(document).ready(function() {
     puzzle.fillJug(puzzle.fiveLitreJug)
     $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
   })
+
+  $('#emptythree').on('click', function() {
+    puzzle.emptyJug(puzzle.threeLitreJug)
+    $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
+  })
+
+  $('#emptyfive').on('click', function() {
+    puzzle.emptyJug(puzzle.fiveLitreJug)
+    $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
+  })
 })

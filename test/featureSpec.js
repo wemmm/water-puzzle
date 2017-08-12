@@ -47,17 +47,19 @@ describe('Feature tests', function() {
     }).then(done, done);
   });
 
-  it('has an empty three litre bottle button that can be clicked on', function(done) {
+  it('has an empty three litre bottle button sets its capacity to zero', function(done) {
     var browser = this.browser;
     browser.pressButton('Empty Three Litre Bottle').then(function() {
     assert.ok(browser.success);
+    browser.assert.text('h3', '0');
     }).then(done, done);
   });
 
-  it('has an empty litre bottle button that can be clicked on', function(done) {
+  it('has an empty litre bottle button that sets its capacity to zero', function(done) {
     var browser = this.browser;
     browser.pressButton('Empty Five Litre Bottle').then(function() {
     assert.ok(browser.success);
+    browser.assert.text('h4', '0');
     }).then(done, done);
   });
 
