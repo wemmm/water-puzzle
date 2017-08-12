@@ -36,4 +36,14 @@ $(document).ready(function() {
     $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
     $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
   })
+
+  $('#weigh').click(function() {
+    var n = $('#fivelitrestatus').text()
+    if (n == 4) {
+      $('#popup').toggle();
+      $(this).toggleClass('open');
+      return false;
+    }
+  })
+
 })

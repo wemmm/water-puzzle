@@ -102,7 +102,7 @@ h4 {
 }
 
 .popup {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 25vh;
   left: 12vw;
@@ -114,4 +114,8 @@ h4 {
   border-radius: 5px;
   border-color: darkred;
   z-index: 3;
+}
+
+.popup.open {
+  display: block;
 }
