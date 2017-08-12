@@ -31,17 +31,19 @@ describe('Feature tests', function() {
     }).then(done, done);
   });
 
-  it('has a fill three litre bottle button that can be clicked on', function(done) {
+  it('has a fill three litre bottle button that updates its current capacity', function(done) {
     var browser = this.browser;
     browser.pressButton('Fill Three Litre Bottle').then(function() {
     assert.ok(browser.success);
+    browser.assert.text('h3', '3');
     }).then(done, done);
   });
 
-  it('has a fill five litre bottle button that can be clicked on', function(done) {
+  it('has a fill five litre bottle button that updates its current capacity', function(done) {
     var browser = this.browser;
     browser.pressButton('Fill Five Litre Bottle').then(function() {
     assert.ok(browser.success);
+    browser.assert.text('h4', '5');
     }).then(done, done);
   });
 
