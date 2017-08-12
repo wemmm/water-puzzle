@@ -23,10 +23,22 @@ This will hopefully be a live web application so the eventual URL will go here, 
 # Tech I'm using:
 
 * Node.js
-* Jasmine
+* Express
+* Jasmine for unit testing
+* Mocha (test framwork), Chai (assertion library) and Zombie (headless browser) for feature testing
 * Javascript
+* jQuery
 * HTML and CSS
 
 # My approach:
 
 I was originally hoping to make this very interactive by making a graphical user interface in HMTL5 Canvas, which seems like a good platform for web apps and games, but my experience has shown that it's difficult to test. Although it wouldn't be impossible, I wasn't satisfied that I would be able to have a canvas app properly tested within the time constraints of this test.
+
+I set up Node and Express to serve the web page, then assembled the game logic via test driven development with Javascript and Jasmine. I created four different objects to keep responsibilities separate:
+
+* Scales- understands win/lose states.
+* Three Litre Jug- understands capacity of the smaller vessel.
+* Five Litre Jug- understands capacity of the larger vessel.
+* Water Puzzle- understands movement of water between other objects.
+
+I then configured Mocha, Chai and Zombie so that I could run feature tests on the web app itself thanks to Zombie's headless browsing.
