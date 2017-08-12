@@ -34,11 +34,20 @@ This will hopefully be a live web application so the eventual URL will go here, 
 
 I was originally hoping to make this very interactive by making a graphical user interface in HMTL5 Canvas, which seems like a good platform for web apps and games, but my experience has shown that it's difficult to test. Although it wouldn't be impossible, I wasn't satisfied that I would be able to have a canvas app properly tested within the time constraints of this test.
 
-I set up Node and Express to serve the web page, then assembled the game logic via test driven development with Javascript and Jasmine. I created four different objects to keep responsibilities separate:
+I set up Node and Express to serve the web page, then assembled the game logic via test driven development with Javascript and Jasmine. I created three different objects to keep responsibilities separate:
 
-* Scales- understands win/lose states.
 * Three Litre Jug- understands capacity of the smaller vessel.
 * Five Litre Jug- understands capacity of the larger vessel.
 * Water Puzzle- understands movement of water between other objects.
 
-I then configured Mocha, Chai and Zombie so that I could run feature tests on the web app itself thanks to Zombie's headless browsing.
+I then configured Mocha, Chai and Zombie so that I could run feature tests on the web app itself thanks to Zombie's headless browsing, and created:
+
+* interface.js
+* timerLogic.js
+* styles.css
+
+These allowed me to create, style and add functionality to buttons on a user interface. Through the user interface, I was able to add win and lose states, plus a countdown timer.
+
+# Attributions
+
+The icons used to illustrate the scales and water vessels are made by [Freepik](https://www.flaticon.com/authors/freepik) from [FlatIcon](https://www.flaticon.com)

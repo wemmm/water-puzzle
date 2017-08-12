@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 html {
-  background-color: dimgray;
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #565656, dimgrey);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #565656, dimgrey); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 h1 {
@@ -73,12 +76,39 @@ p {
 }
 
 button {
-  font-family: Lato;
-}
+   border-top: 1px solid #7a7a7a;
+   background: #2e2e2e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#4a4a4a), to(#2e2e2e));
+   background: -webkit-linear-gradient(top, #4a4a4a, #2e2e2e);
+   background: -moz-linear-gradient(top, #4a4a4a, #2e2e2e);
+   background: -ms-linear-gradient(top, #4a4a4a, #2e2e2e);
+   background: -o-linear-gradient(top, #4a4a4a, #2e2e2e);
+   padding: 7.5px 15px;
+   border-radius: 6px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 10px;
+   font-family: Lato;
+   text-decoration: none;
+   vertical-align: middle;
+   width: 160px;
+   }
+
+button:hover {
+   border-top-color: #858585;
+   background: #858585;
+   color: #ffffff;
+   }
+
+button:active {
+   border-top-color: #960000;
+   background: red;
+   }
 
 .status {
   text-align: center;
-  padding-top: 75px;
+  padding-top: 40px;
   padding-left: 250px;
 }
 
@@ -107,37 +137,14 @@ button {
 .buttons {
   padding-top: 50px;
   text-align: center;
-  margin-left: 70px;
-}
-
-.fillthree {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.emptythree {
-  margin-left: 130px;
-  margin-right: 130px;
-}
-
-.pourintofive {
-  margin-left: 120px;
-  margin-right: 0px;
-}
-
-.pourintothree {
-  margin-left: 120px;
-  margin-right: 0px;
 }
 
 .hidden1 {
   visibility: hidden;
-  padding-right: 60px;
 }
 
 .hidden2 {
   visibility: hidden;
-  padding-right: 82px;
 }
 
 .winpopup {
@@ -145,6 +152,7 @@ button {
   position: absolute;
   top: 25vh;
   left: 12vw;
+  bottom: 10vh;
   width: 75vw;
   height: 70vh;
   background-color: darkgray;

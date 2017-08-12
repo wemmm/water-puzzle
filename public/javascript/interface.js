@@ -40,8 +40,8 @@ $(document).ready(function() {
   $('#weigh').click(function() {
     var n = $('#fivelitrestatus').text()
     if (n == 4) {
-      $('#popup').toggle();
-      $(this).toggleClass('open');
+      $('#winpopup').toggle();
+      $(this).addClass('open');
       return false;
     }
   })
