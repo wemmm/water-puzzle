@@ -75,7 +75,7 @@ describe('Feature tests', function() {
     }).then(done, done);
   });
 
-  it('has another pour into bottle button that can be clicked on', function(done) {
+  it('has a pour into bottle button that pours the three litre contents into the five litre bottle', function(done) {
     var browser = this.browser;
     browser.pressButton('Fill Three Litre Bottle').then(function() {
     assert.ok(browser.success);
@@ -85,5 +85,19 @@ describe('Feature tests', function() {
     browser.assert.text('h3', '0');
     browser.assert.text('h4', '5');
     }).then(done, done);
+  });
+
+  it('has a win message', function(done) {
+    var browser = this.browser;
+    browser.pressButton('Weigh').then(function() {
+    assert.ok(browser.success);
+    browser.assert.text('h5', 'You Win!');
+    }).then(done, done);
+  });
+
+  it('has a lose message', function(done) {
+    var browser = this.browser;
+    browser.assert.text('h7', 'You Lose!');
+    done();
   });
 });

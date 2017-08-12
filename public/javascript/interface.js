@@ -46,4 +46,6 @@ $(document).ready(function() {
     }
   })
 
+document.getElementById('timer').innerHTML = 05 + ":" + 01;
+startTimer();
 })

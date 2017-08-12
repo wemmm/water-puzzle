@@ -4,6 +4,7 @@
 
     <link rel="stylesheet" href="/css/styles.css">
     <script type="text/javascript" src ="/javascript/jquery.js"></script>
+    <script type="text/javascript" src ="/javascript/timerLogic.js"></script>
     <script type="text/javascript" src ="/javascript/interface.js"></script>
     <script type="text/javascript" src ="/javascript/fiveLitreJug.js"></script>
     <script type="text/javascript" src ="/javascript/threeLitreJug.js"></script>
@@ -18,9 +19,12 @@
   <h1>Die Hard 3</h1>
   <h2>Water Puzzle</h2>
 
+  <h6><span id="timer"></span></h6>
+
   <div class="status">
     <h3 id="threelitrestatus"></h3><h4 id="fivelitrestatus"></h4>
   </div>
+
 
   <div class="images">
     <img class="scales" src="http://localhost:3000/images/scales.png" alt="scales">
@@ -40,9 +44,15 @@
     <button class="pourintothree" id="pourintothree" type="button" name="button">Pour Into Three Litre Bottle</button>
   </div>
 
-  <div id=popup class=popup style="text-align:center;">
-    <h1>You Win!</h1>
+  <div id=winpopup class=winpopup style="text-align:center;">
+    <h5>You Win!</h5>
     <p>You weigh the four litres of water and the bomb is defused!</p>
+    <p>Refresh the page to play again.</p>
+  </div>
+
+  <div id=losepopup class=losepopup style="text-align:center;">
+    <h7>You Lose!</h7>
+    <p>You ran out of time and the bomb went off. Oh no!</p>
     <p>Refresh the page to play again.</p>
   </div>
 

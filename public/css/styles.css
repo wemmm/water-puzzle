@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html {
   background-color: dimgray;
@@ -28,6 +29,7 @@ h3 {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 20px;
+  font-family: Lato;
 }
 
 h4 {
@@ -35,11 +37,48 @@ h4 {
   padding-left: 200px;
   padding-right: 50px;
   font-size: 20px;
+  font-family: Lato;
+}
+
+h5 {
+  margin-bottom: 0;
+  font-family: 'Russo One';
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+h6 {
+  text-align: center;
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  font-size: 20px;
+  font-family: Lato;
+}
+
+h7 {
+  margin-bottom: 0;
+  padding-top: 20px;
+  font-family: 'Russo One';
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+p {
+  font-family: Lato;
+}
+
+button {
+  font-family: Lato;
 }
 
 .status {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 75px;
   padding-left: 250px;
 }
 
@@ -101,7 +140,7 @@ h4 {
   padding-right: 82px;
 }
 
-.popup {
+.winpopup {
   display: none;
   position: absolute;
   top: 25vh;
@@ -116,6 +155,25 @@ h4 {
   z-index: 3;
 }
 
-.popup.open {
+.winpopup.open {
+  display: block;
+}
+
+.losepopup {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: 12vw;
+  width: 75vw;
+  height: 70vh;
+  background-color: darkgray;
+  color: black;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: darkred;
+  z-index: 3;
+}
+
+.losepopup.open {
   display: block;
 }
