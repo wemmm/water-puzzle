@@ -100,3 +100,18 @@ h4 {
   visibility: hidden;
   padding-right: 82px;
 }
+
+.popup {
+  /*display: none;*/
+  position: absolute;
+  top: 25vh;
+  left: 12vw;
+  width: 75vw;
+  height: 70vh;
+  background-color: darkgray;
+  color: black;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: darkred;
+  z-index: 3;
+}
