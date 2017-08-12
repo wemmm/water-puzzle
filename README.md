@@ -18,7 +18,7 @@ In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out h
 
 # How does it work?
 
-This will hopefully be a live web application so the eventual URL will go here, as will instructions on how to interact with it.
+Visit the web app [here](https://being-bruce.herokuapp.com/)! The bank of buttons at the bottom of the page can be used to fill, empty or transfer containers and the 'weigh' button can be pressed to assess if you've managed to get four litres into the larger container.
 
 # Tech I'm using:
 
