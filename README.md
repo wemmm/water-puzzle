@@ -12,13 +12,16 @@
 # What is this?
 
 This is an attempt to recreate a riddle from Die Hard With a Vengeance:
+
 ```
 In the movie Die Hard 3, Bruce Willis is given this task: he has to figure out how to get exactly 4 litres of water in a beaker. He has a tap with running water, a 3 litre beaker and a 5 litre beaker. There is no shortage of water in the tap, but time is limited, so he needs to get to the answer in the minimum number of steps.
 ```
 
 # How does it work?
 
-Visit the web app [here](https://being-bruce.herokuapp.com/)! The bank of buttons at the bottom of the page can be used to fill, empty or transfer containers and the 'weigh' button can be pressed to assess if you've managed to get four litres into the larger container.
+Visit the web app [here](https://being-bruce.herokuapp.com/)!
+
+The aim of the game is to get four litres of water using three and five litre containers. The bank of buttons at the bottom of the page can be used to fill, empty or transfer containers and the 'weigh' button can be pressed to assess if you've managed to get four litres into the larger container. But watch out- you only have five minutes to solve the problem!
 
 # Tech I'm using:
 
