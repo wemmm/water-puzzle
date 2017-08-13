@@ -30,7 +30,7 @@ The aim of the game is to get four litres of water using three and five litre co
 
 * Node.js and Express
 * Jasmine for unit testing
-* Mocha (test framwork), Chai (assertion library) and Zombie (headless browser) for feature testing
+* Mocha (test framework), Chai (assertion library) and Zombie (headless browser) for feature testing
 * Javascript (game logic)
 * jQuery (web interface)
 * HTML and CSS
