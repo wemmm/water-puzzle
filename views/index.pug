@@ -33,27 +33,39 @@
   </div>
 
   <div class="buttons">
-    <button class= "weigh" id="weigh" type="button" name="button">Weigh</button>
-    <button class="fillthree" id="fillthree" type="button" name="button">Fill Three Litre Bottle</button>
-    <button class="fillfive" id="fillfive" type="button" name="button">Fill Five Litre Bottle</button><br>
-    <button class="hidden1" type="button" name="button"></button>
-    <button class="emptythree" id="emptythree" type="button" name="button">Empty Three Litre Bottle</button>
-    <button class="emptyfive" id="emptyfive" type="button" name="button">Empty Five Litre Bottle</button><br>
-    <button class="hidden2" type="button" name="button"></button>
-    <button class="pourintofive" id="pourintofive" type="button" name="button">Pour Into Five Litre Bottle</button>
-    <button class="pourintothree" id="pourintothree" type="button" name="button">Pour Into Three Litre Bottle</button>
+    <button class= "weigh" id="weigh" type="button">Weigh</button>
+    <button class="fillthree" id="fillthree" type="button">Fill Three Litre Bottle</button>
+    <button class="fillfive" id="fillfive" type="button">Fill Five Litre Bottle</button><br>
+    <button class="reset" id="reset" type="button">Reset</button>
+    <button class="emptythree" id="emptythree" type="button">Empty Three Litre Bottle</button>
+    <button class="emptyfive" id="emptyfive" type="button">Empty Five Litre Bottle</button><br>
+    <button class="instructions" id="instructions" type="button">Instructions</button>
+    <button class="pourintofive" id="pourintofive" type="button">Pour Into Five Litre Bottle</button>
+    <button class="pourintothree" id="pourintothree" type="button">Pour Into Three Litre Bottle</button>
   </div>
 
   <div id=winpopup class=winpopup style="text-align:center;">
     <h5>You Win!</h5>
     <p>You weigh the four litres of water and the bomb is defused!</p>
     <p>Refresh the page to play again.</p>
+    <img class=smallimage src="https://i.imgur.com/SFw1srz.png" alt="well done">
   </div>
 
   <div id=losepopup class=losepopup style="text-align:center;">
-    <h7>You Lose!</h7>
+    <h5>You Lose!</h5>
     <p>You ran out of time and the bomb went off. Oh no!</p>
     <p>Refresh the page to play again.</p>
+    <img class=smallimage src="https://i.imgur.com/IH3L1oM.png" alt="boom">
+  </div>
+
+  <div id=helppopup class=helppopup style="text-align:center;">
+    <h5>How To Play</h5>
+    <p>Can you defuse the bomb?</p>
+      <p>It will explode in five minutes unless a container with four litres of water inside is placed on the weighing scales.</p>
+      <p>Use the buttons to fill, empty or transfer the contents of containers.</li>
+      <p>The numbers above the containers show how many litres of water are currently inside them. You can empty both containers with the 'reset' button.</p>
+      <p>To weigh the larger container and see if you defused the bomb, press the weigh button. You can fill, empty and transfer as much as you like- your only limit is time!</p>
+    <button id="close" type="button">Close</button>
   </div>
 
   </body>

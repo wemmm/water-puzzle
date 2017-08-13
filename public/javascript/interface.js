@@ -20,6 +20,13 @@ $(document).ready(function() {
     $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
   })
 
+  $('#reset').on('click', function() {
+    puzzle.emptyJug(puzzle.fiveLitreJug)
+    puzzle.emptyJug(puzzle.threeLitreJug)
+    $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
+    $('#threelitrestatus').text(puzzle.threeLitreJug.current_capacity)
+  })
+
   $('#emptyfive').on('click', function() {
     puzzle.emptyJug(puzzle.fiveLitreJug)
     $('#fivelitrestatus').text(puzzle.fiveLitreJug.current_capacity)
@@ -44,6 +51,16 @@ $(document).ready(function() {
       $(this).addClass('open');
       return false;
     }
+  })
+
+  $('#instructions').on('click', function() {
+    $('#helppopup').toggle();
+    $(this).addClass('open');
+  })
+
+  $('#close').on('click', function() {
+    $('#helppopup').toggle();
+    $(this).removeClass('open');
   })
 
 document.getElementById('timer').innerHTML = 05 + ":" + 01;
